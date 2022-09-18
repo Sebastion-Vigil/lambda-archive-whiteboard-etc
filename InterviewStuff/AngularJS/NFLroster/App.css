@@ -1,0 +1,32 @@
+body {
+    font: 12px sans-serif;
+    line-height: 1.6em;
+    margin: auto;
+    max-width: 960px;
+  }
+  
+  form {
+    text-align: right;
+  }
+  
+  h1, h2, hr, p, table {
+    margin-bottom: 20px;
+  }
+  
+  table {
+    width: 100%;
+  }
+  
+  th, td {
+    padding: 5px;
+    text-align: left;
+    vertical-align: top;
+  }
+  
+  th {
+    background: #ccc;
+  }
+  
+  .even {
+    background-color: #efefef;
+  }

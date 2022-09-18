@@ -1,0 +1,18 @@
+def make_change(amount, denominations, index=0):
+
+    if amount == 0:
+        return 1
+    elif amount < 0:
+        return 0
+    elif index == len(denominations):
+        return 0
+
+    coin = denominations[index]
+
+    num_possibilities = 0
+    while amount >= 0:
+
+ 
+        num_possibilities += make_change(amound, denominations, index + 1)
+        amount -= coin
+    return num_possibilities 

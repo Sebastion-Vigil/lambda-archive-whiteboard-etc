@@ -1,0 +1,27 @@
+Mountain Climbing
+You are a mountain climber seeking to scale a very tall mountain, 10 units tall. You start at the base of a mountain at height 0.
+
+The mountain is separated into 10 rest stops; one at height 1, one at height 2... and so on. The rest stops are connected by climbing paths, represented by data structures similar to the one below. The index of the array is the height of the rest stop, and the elements of each nested array are the rest stops that are reachable from the current rest stop:
+
+paths = [
+  [1, 2, 3],  # Rest stop 0 can reach 1, 2 or 3
+  [3],        # Rest stop 1 can only reach 3
+  [1,4,7],    # etc
+  [], 
+  [10],       # Rest stop 4 can reach the summit
+  ...
+];
+The amount of effort required to climb from one rest stop to another one is the square of the difference between the two heights.
+
+effort = (height1 - height2)²
+
+Your job is to determine the minimum amount of effort required to reach the summit. Implement a function, determine_effort, that returns the integer sum of the efforts to climb to the summit.
+
+Function Syntax
+determine_effort(mountain)
+Parameters
+TYPE    NAME        NOTES
+list            mountains   -
+
+Return Value int
+Exceptions or Errors None
